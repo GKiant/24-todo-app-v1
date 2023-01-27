@@ -1,8 +1,10 @@
-const Todo = () => {
+import styles from './Todo.module.css';
+
+const Todo = ({ todo }) => {
   return (
-    <>
-      <h1>This is todo</h1>
-    </>
+    <div className={styles.todo}>
+      <div className={styles.todoText}>{todo}</div>
+    </div>
   );
 };
 
